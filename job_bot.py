@@ -86,8 +86,8 @@ def run():
             desc = get_job_details(job["job_id"])
             emails, experience, is_c2c = extract_info(desc)
             
-            if False:
-                continue
+           if not is_c2c:
+               continue
             
             email_str = ", ".join(emails) if emails else "Not listed"
             exp_str = ", ".join(experience) if experience else "Not listed"
