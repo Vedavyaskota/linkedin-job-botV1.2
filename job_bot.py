@@ -8,7 +8,7 @@ TELEGRAM_TOKEN = os.environ["TELEGRAM_TOKEN"]
 CHAT_ID = os.environ["CHAT_ID"]
 
 # Keywords that signal C2C / contract roles
-C2C_KEYWORDS = ["c2c", "corp to corp", "corp-to-corp", "contract", "1099", "w2/c2c", "w2 or c2c"]
+C2C_KEYWORDS = ["c2c", "corp to corp", "corp-to-corp", "contract", "1099"]
 EXPERIENCE_PATTERN = re.compile(r'\d+\+?\s*(?:years?|yrs?)', re.IGNORECASE)
 EMAIL_PATTERN = re.compile(r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}')
 
@@ -69,9 +69,18 @@ def send_telegram(message):
 def run():
     # Customize your search terms and location here
     searches = [
-        ("software engineer C2C", "United States"),
-        ("java developer contract", "Remote"),
-        ("python developer corp to corp", "United States"),
+        (".Net developer C2C", "United States"),
+        (".Net developer corp to corp", "United States"),
+        (".Net developer corp-to-corp", "United States"),
+        (".Net C2C", "United States"),
+        (".Net corp to corp", "United States"), 
+        (".Net corp-to-corp", "United States"), 
+        ("dotNet C2C", "United States"),
+        ("dotNet corp to corp", "United States"),
+        ("dotNet corp-to-corp", "United States"),
+        ("dot Net C2C", "United States"),
+        ("dot Net corp to corp", "United States"),
+        ("dot Net corp-to-corp", "United States"),
     ]
     
     seen_ids = set()
