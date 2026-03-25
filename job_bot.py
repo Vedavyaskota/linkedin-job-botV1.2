@@ -67,9 +67,6 @@ def send_telegram(message):
 
 def run():
     searches = [
-        (".Net developer C2C", "United States"),
-        (".Net developer corp to corp", "United States"),
-        (".Net developer corp-to-corp", "United States"),
         (".Net C2C", "United States"),
         (".Net corp to corp", "United States"),
         (".Net corp-to-corp", "United States"),
