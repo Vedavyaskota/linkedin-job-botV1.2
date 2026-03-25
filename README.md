@@ -13,4 +13,4 @@ Automatically searches LinkedIn for C2C/contract jobs and sends alerts to Telegr
 - Telegram chat ID stored in GitHub secret: CHAT_ID
 
 ## Schedule
-Runs automatically every 6 hours via GitHub Actions.
+Runs automatically every 1 hour from 6am to 4pm CST via GitHub Actions.
